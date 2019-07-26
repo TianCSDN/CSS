@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>俩列居中自适应布局</title>
+	<style type="text/css">
+		#header{
+			height: 50px;
+			background: red;
+		}
+		#farther{
+			width: 80%;
+			margin: auto;
+			overflow: hidden;
+		}
+		#farther .son-left{
+			width: 20%;
+			height: 600px;
+			background: gray;
+			float: left;
+		}
+		#farther .son-right{
+			width: 80%;
+			height: 600px;
+			background: blue;
+			float: right;
+		}
+		#footer{
+			width: 80%;
+			height: 100px;
+			background: pink;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">页头</div>
+    <div id="farther">
+    	<div class="son-left">左列</div>
+    	<div class="son-right">右列</div>
+    </div>
+    <div id="footer">页脚</div>
+
+</body>
+</html>
