@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>如何使用rem</title>
+
+	<script type="text/javascript">
+		var dpr = window.devicePixelRatio;
+		var metaTag = document.createElement('meta');
+		metaTag.name="viewport"
+		metaTag.setAttribute('content','initial-scale=' +1/dpr, +  'maximum-scale=' + 1/dpr, +  'manimum-scale=' + 1/dpr, 'user-scalable=no');
+		document.getElementsByTagName('head')[0].appendChild(metaTag);
+	</script>
+
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded',function(e) {
+			  document.getElementsByTagName('html')[0].style.fontSize=window.innerWidth + 'px';
+		},false);
+	</script>
+</head>
+<body>
+	<style type="text/css">
+		body{
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			line-height: 0;
+		}
+		table{
+			width: 100%;
+		}
+		.icon{
+			width: calc(196rem / 375);
+			margin: calc(100rem / 375) 0 0 0;
+		}
+		.name{
+			margin: calc(30rem / 375) 0 0 0;
+			font-size: calc(30rem / 375);
+			line-height: calc(30rem / 375);
+			color: #64b587;
+		}
+	</style>
+
+
+	<table>
+		<tbody>
+			<tr><td><img src="../img/01.jpg" class="icon"></img></td></tr>
+			<tr><td><p class="name">王者荣耀</p></td></tr>
+		</tbody>
+	</table>
+
+
+</body>
+</html>
